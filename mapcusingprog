@@ -1,0 +1,8 @@
+(defun mapcprog(f lis)
+  (PROG (fval)
+  LOOP
+  (when (null lis) (return T))
+  (setq fval       (funcall f (car lis)))
+  (when (null fval) (return nil))
+  (setq lis         (cdr lis))
+  (go LOOP)))
