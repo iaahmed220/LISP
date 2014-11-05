@@ -1,0 +1,13 @@
+(putprop 's 'neighbors '(h j p o))
+(putprop 'h 'neighbors '(j p o s f))
+(putprop 'p 'neighbors '(j h o  s f))
+(putprop 'o 'neighbors '(j p h s f))
+(putprop 'j 'neighbors '(o p h s f))
+(putprop 'f 'neighbors '(h j p o))
+
+(putprop 's 'dist '(152 71 132 114))
+(putprop 'h 'dist '(167 275 256 152 152))
+(putprop 'p 'dist '()200 275 85 132 132)
+(putprop 'o 'dist '(140 85 256 114 114))
+(putprop 'j 'dist '(140 200 167 71 71))
+(putprop 'f 'dist '(152 71 132 114))

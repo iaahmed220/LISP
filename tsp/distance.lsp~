@@ -1,0 +1,12 @@
+(defun distance (node1 node2)
+  (prog (node1 d1)
+    (setq node1 (get node1 'neighbors))
+    (setq d1 (get node1 'dist))
+   LOOP
+   (cond
+    ((null node1) (return 0))
+    ((equal node2 (car node1)) (return (car d1))))
+    (setq node1 (cdr node1))
+    (setq d1 (cdr d1))
+    (go LOOP) ))
+    

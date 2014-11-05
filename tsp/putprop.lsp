@@ -1,0 +1,1 @@
+(defun putprop (atm pname pvalue) (setf (get atm pname) pvalue))
